@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    .centrar{
+        margin-top: 100px;
+    }
+    body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 100%;
+    min-height: 700px;
+    }
+</style>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container centrar">
+        <div class="row">
+            <div class="cl offset-3">
+                <div class="card" style="width: 40rem;">
+                    <img src="./ejercicio3.png" class="card-img-top" style="height: 350px;"alt="...">
+                    <div class="card-body">
+                      <p class="badge text-bg-warning">
+                        Ejercicios de cadenas de caracteres</p>
+                    </div>
+                  </div>
+
+                  <div class="gap-2 pt-4">
+                    <a class="btn btn-primary" href="./index.html" role="button">Ir al Inicio</a>
+                    <a class="btn btn-primary" href="./ejercicio3.html" role="button">Repetir</a>
+                  </div>
+            </div>
+        </div>
+
+
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!--Codigo de mis ejercicios -->
+  <script>
+        
+    // 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']..//
+    let bandera=0, bandera2=0, msj_rec=null, msj, car;
+    while(bandera==0){ 
+    msj=prompt("Ingresa un String para devolverte un Array de textos separados por el caracter que indiques")
+    if (msj.length>0){
+        bandera=1;
+        while(bandera2==0){
+        car=prompt(`Indica 1 caracter con el cual quieres separar las palabras del string`)
+            if(car!=`` && car.length==1){
+                bandera2=1;
+            }
+        }
+    }
+    }
+    const recortar=(msj,car)=>  msj_rec=msj.split(`${car}`);
+    recortar(msj,car);
+
+        msj_rec.forEach( el => {
+        console.log(`${el}`)})
+
+    </script>
+  
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
